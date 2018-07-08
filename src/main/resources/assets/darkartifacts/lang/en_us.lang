@@ -1,0 +1,16 @@
+
+
+#####
+# ITEMS
+#####
+
+item.basicitem.name=Basic Item
+
+
+
+
+######
+# BLOCKS
+######
+
+tile.basicblock.name=Basic Block

@@ -1,0 +1,16 @@
+[
+    {
+      "modid": "darkartifacts",
+      "name": "Dark Artifacts",
+      "description": "Unlocks the dark energies flowing throughout our world.",
+      "version": "0.0.1",
+      "mcversion": "${mcversion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": ["Kryptical"],
+      "credits": "",
+      "logoFile": "",
+      "screenshots": [],
+      "dependencies": []
+    }
+]
