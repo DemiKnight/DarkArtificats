@@ -12,6 +12,13 @@ import net.minecraftforge.common.config.Configuration;
     public static boolean isDebug = false;
 //    public static String yourRealName = "Knight";
 
+    /* Dimension entries */
+
+    public static int dimensionIDSpirit = 543;
+    public static int dimensionIDUnderworld = 544;
+    public static int dimensionIDUpperworld = 545;
+
+
 
     public static void readConfig()
     {
@@ -48,5 +55,9 @@ import net.minecraftforge.common.config.Configuration;
     private static void initDimensionsConfig(Configuration configIn)
     {
         configIn.addCustomCategoryComment(CATEGORY_DIMENSIONS,"Dimension settings");
+        dimensionIDSpirit = configIn.getInt("dimensionID-Spirit",CATEGORY_DIMENSIONS, dimensionIDSpirit,2,999,"The ID for the spirit Dimension");
+        dimensionIDUnderworld = configIn.getInt("dimensionID-underworld",CATEGORY_DIMENSIONS, dimensionIDUnderworld,2,999,"The ID for the underworld Dimension");
+        dimensionIDUpperworld = configIn.getInt("dimensionID-upperworld",CATEGORY_DIMENSIONS, dimensionIDUpperworld,2,999,"The ID for the upperworld Dimension");
+
     }
 }

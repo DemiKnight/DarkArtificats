@@ -2,6 +2,7 @@ package kryptical.darkartifacts.proxy;
 
 import kryptical.darkartifacts.DarkArtifacts;
 import kryptical.darkartifacts.common.DarkArtifactsConfig;
+import kryptical.darkartifacts.common.dimensions.DarkArtifactDimensions;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -24,6 +25,8 @@ public class CommonProxy {
         File directory = e.getModConfigurationDirectory();
         mainConfig = new Configuration(new File(directory.getPath(),"darkArtifacts.cfg"));
         DarkArtifactsConfig.readConfig();
+
+        DarkArtifactDimensions.init();
     }
 
     public void init(FMLInitializationEvent e) {
