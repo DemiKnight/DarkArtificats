@@ -12,23 +12,28 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class DarkArtifactBlocks
 {
     public static BlockBasic BasicBlock = new BlockBasic();
+    public static BlockSpiritualPortal SpiritualPortal = new BlockSpiritualPortal();
 
     public static ItemBlockBasic itemBlockBasicBlock = new ItemBlockBasic(BasicBlock);
+    public static ItemBlockBasic itemBlockSpiritualPortal = new ItemBlockBasic(SpiritualPortal);
 
     public static void registerBlocks(IForgeRegistry<Block> registry)
     {
         registry.register(initNames(BasicBlock, "basicblock"));
+        registry.register(initNames(SpiritualPortal, "spiritualportal"));
     }
 
     public static void registerItemBlocks(IForgeRegistry<Item> registry)
     {
         registry.register(DarkArtifactItems.initName(itemBlockBasicBlock, "basicblock"));
+        registry.register(DarkArtifactItems.initName(itemBlockSpiritualPortal,"spiritualportal"));
     }
 
     @SideOnly(Side.CLIENT)
     public static void initModels()
     {
         itemBlockBasicBlock.initModel();
+        itemBlockSpiritualPortal.initModel();
     }
 
 

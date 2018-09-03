@@ -14,3 +14,9 @@ item.basicitem.name=Basic Item
 ######
 
 tile.basicblock.name=Basic Block
+
+######
+# Creative Tab
+######
+
+itemGroup.darkartifacts=Dark Artifacts
